@@ -1,0 +1,185 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="practicetechnicaldoc.css" type="text/css">
+    <body>
+
+    <main  id="main-doc">
+
+          <!-- <--Nav BAr --> -->
+              <nav id="navbar" class="navbar">
+
+                        <header>Getting Started With React (Basics)</header>
+                           <a href="#Try_React"   class="nav-link">Try React</a><br>
+                          <a href="#Learn_React" class="nav-link">Learn React</a><br>
+                          <a href="#Staying_Informed" class="nav-link">Staying Informed </a><br> 
+                          <a href="#Add_React_to_a_Website" class="nav-link">Add React to a Website</a><br>
+                          <a href="#Try_React_with_JSX" class="nav-link">Try React With JSX</a> <br>
+               </nav>
+         <div class="box"><!-- Navbar Closes and Header Starts For The Document     -->
+        <h1>React Basics To Get Started </h1>
+        <br>
+
+
+               <!-- Document 1st Secton TRy React PArt Starts -->
+        <section  class="main-section" id="Try_React">
+
+                     <header>Try React</header>
+                      <p>React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
+
+                     </p>
+
+                     <strong>Online Playgrounds</strong>
+
+                     <p>If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
+
+                     If you prefer to use your own text editor, you can also <a href="https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html">download this HTML file</a>, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
+
+                      </p>
+
+                    <p><strong>Add React In A Minute</strong><br>In this section, we will show how to add a React component to an existing HTML page. You can follow along with your own website, or create an empty HTML file to practice.
+
+                     There will be no complicated tools or install requirements — to complete this section, you only need an internet connection, and a minute of your time</p>
+
+                  <strong>Step 1: Add a DOM Container to the HTML</strong>
+
+                 <p>First, open the HTML page you want to edit. Add an empty <div> tag to mark the spot where you want to display something with React. For example:</p>
+
+                    <code>
+                        <!-- ... existing HTML ... -->
+
+                                     <div id="like_button_container"></div>
+            
+                                         <!-- ... existing HTML ... -->
+                    </code>
+
+                 <p>We gave this <div> a unique id HTML attribute. This will allow us to find it from the JavaScript code later and display a React component inside of it.</p>
+
+                <strong>Step 2: Add The script Tag</strong>   <br>
+
+                <p>Next, add three script tags to the HTML page right before the closing body tag</p>
+                
+            
+                    <pre>
+                        <code>
+                        .. other HTML ...
+                         Load React.
+                        Note: when deploying, replace "development.js" with "production.min.js".
+
+                        {script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin>script
+                        script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin> script}
+
+                        Load our React component.
+
+                        script src="like_button.js">script
+
+                       </body>
+                  </code>
+                </pre>
+                      <strong>Step 3: Create React Component </strong>
+                      <p>Create a file called like_button.js next to your HTML page.Open<a href="Open this starter code and paste it into the file you created.">this starter code and paste it into the file you created.    </a> </p>
+                        <p>After the starter code, add two lines to the bottom of like_button.js:</p>
+                        <pre><code>
+                        // ... the starter code you pasted ...
+
+                        const domContainer = document.querySelector('#like_button_container');
+                        
+                        const root = ReactDOM.createRoot(domContainer);
+                        root.render(e(LikeButton));</code></pre>
+                        <p>These three lines of code find the <div> we added to our HTML in the first step, create a React app with it, and then display our “Like” button React component inside of it.
+
+                        </p>
+                        <strong>Thats It</strong>
+                     <p>There is no step four. You have just added the first React component to your website.</p>
+
+    </section>
+    
+            <!-- Try React Part CLoses  -->
+        <!-- Second Section Learn React Part Starts  -->
+    <section class="main-section" id="Learn_React">
+                    <header>learn React</header>
+                    <p>People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.</p>
+                    <ul>
+                        <li>If you prefer to learn by doing, start with our <a href="https://reactjs.org/tutorial/tutorial.html">practical tutorial</a>.</li>
+                        <li>If you prefer to learn concepts step by step, start with our<a href="https://reactjs.org/docs/hello-world.html" >guide to main concepts.</a></li>
+                    </ul>
+    </section>
+                <!-- Learn React Part Closes -->
+                <!-- Section 3 Staying Informed PArt Starts -->
+    <section class="main-section"id="Staying_Informed" >
+                    <header>Staying Informed</header>
+                    <p>The <a href="Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the CHANGELOG.md file in the React repository, as well as on the Releases page.">React Blog </a>is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.</p>
+                    <p>You can also follow the<a href="https://twitter.com/reactjs"> @reactjs account</a>  on Twitter, but you won’t miss anything essential if you only read the blog.</p>
+                    <p>Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the<a href="https://github.com/facebook/react/blob/main/CHANGELOG.md">CHANGELOG.md file in the React repository</a> , as well as on the <a href="https://github.com/facebook/react/releases">Releases</a> page.</p>
+    </section>
+
+
+            <!-- Staying Informed PArt Closed  -->
+            <!-- 4th Section Add React To a website Starts -->
+    <section class="main-section"id="Add_React_to_a_Website">
+                    <header>Add React to a Website</header>
+
+
+                    <p>We have learned try react in a minute in the try react session above .Thanks </p>
+
+                    <p>If you want to learn more please follow below links </p>
+                    <ul>
+                        <li><a href="https://reactjs.org/docs/create-a-new-react-app.html">Creat A New React <Applet></Applet></a></li>
+                        <li><a href="https://reactjs.org/docs/cdn-links.html">CDN Links </a></li>
+                        <li><a href="https://reactjs.org/">React Explorer</a></li>
+                    </ul>
+    </section>
+
+
+            <!-- section 4 closes named Add React to a Website  -->
+            <!-- Section 5 Starts Try React with JSK  -->
+    <section class="main-section"id="Try_React_with_JSX">
+                    <header>Try React with JSX</header>
+                    <p>In the examples above, we only relied on features that are natively supported by browsers. This is why we used a JavaScript function call to tell React what to display:</p>
+
+                    <pre class="line-numbers">
+                        <code class="language-markup">
+                            //"  const e = React.createElement;
+
+                            // Display a "Like" button
+
+
+                                </code>
+                                </pre>
+                         <pre><code>      
+                              //return e(
+                                'button',
+                            { onClick: () => this.setState({ liked: true }) },
+                                 'Like'
+                               );"
+                        </code>
+                        </pre>
+                    
+                     
+                    
+                         <p>However, React also offers an option to use <a href=""https://reactjs.org/docs/introducing-jsx.html">JSX instead:</a>
+                        </p>
+                       <pre> <code>
+                            {// Display a "Like" button
+                            return (
+                                button onClick={() => this.setState({ liked: true })}>
+                                Like
+                                /button
+                            );}
+                        </code> 
+                    </pre>
+                            <p>These two code snippets are equivalent. While JSX is <a href="       You can play with JSX using this online converter">completely optional</a>, many people find it helpful for writing UI code — both with React and with other libraries.
+                                </p>
+                            <p>       You can play with JSX using <a href="https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwIwrgLhD2B2AEcDCAbAlgYwNYF4DeAFAJTw4B88EAFmgM4B0tAphAMoQCGETBe86WJgBMAXJQBOYJvAC-RGWQBQ8FfAAyaQYuAB6cFDhkgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.15.7"></a>this online converter</p>
+    </section>
+
+</div>         
+
+    </main>
+    </body>
+    </html>

@@ -1,0 +1,112 @@
+.nav-link{
+    color:#1D438A;
+    /* width: 35%; */
+    font-weight: bolder;
+background-color:rgb(204, 255, 236,.1);
+border-radius: 100px;   
+     font-size:40px;
+     padding:20px;
+     margin-top:10px;
+     display:flex;
+     font-weight: bolder;
+     text-decoration:underline ;
+    text-
+     
+     
+   }
+   #main-doc #navbar header{
+    font-size:40px;
+    font-weight: bolder;
+    background-color:ghostwhite;
+    border-radius:80px;
+    padding:10px;
+    text-align:center;
+
+      
+    
+  }
+     
+  
+   #navbar{
+     background-color:#00C4B7;
+   padding:20px;
+   }
+     
+
+   #main-doc header
+   {    
+        display:flex;
+        font-size: 40px;
+        justify-content: center;
+        background-color:rgb(169, 255, 151,.3)
+        ;
+        border-radius: 100px;
+
+        text-align: center;
+        width:60%;
+        margin: auto;
+
+   }
+
+   h1{
+
+    font-size:40px;
+    background-color:rgb(169, 255, 151,.5) ;
+    text-align: center;
+    
+   }
+   main-doc{
+
+    display:flex;
+   }
+
+   .main-section{
+        padding:20px;
+        font-size:20px;
+   }
+   strong{
+
+
+    font-size:22px;
+   }
+   code{
+                display: block;
+                background-color: aliceblue;
+  overflow: scroll ;
+
+  }
+
+  @media (min-width:750px)
+  {
+
+
+    #main-doc{
+display: flex;
+
+  }
+    #main-doc .navbar{
+    width:28vw;
+    position:fixed;
+  }
+  #main-doc .navbar .nav-link{
+
+    width:85%;
+  }
+  #main-doc .navbar header{
+
+    width:90%;
+  }
+    #main-doc .box{
+   
+   margin-left: 31%;
+   width:68vw;
+   /* flex-direction: row; */
+  }
+    body{
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      width:95vw;
+      height: 100%;
+
+    }
+  }
